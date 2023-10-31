@@ -6,7 +6,6 @@
  */
 void main(void)
 {
-	char abc.txt[50]; /* initialize the old file */
 	char dataToAppend[5]; /*size of data to append*/
 	FILE *fp = NULL; /* declare the file pointer*/
 
@@ -17,10 +16,6 @@ void main(void)
 		printf("Error");
 		exit(1);
 	}
-
-	/* open the file you want to append*/
-	printf("Enter the name of file: ");
-	scanf("%s", abc.txt);
 
 	/* write the data to append*/
 	printf("\nEnter data to append: ");
