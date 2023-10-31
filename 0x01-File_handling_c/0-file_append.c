@@ -23,13 +23,8 @@ void main(void)
 
 	fputs(dataToAppend, fp); /*appends data to file*/
 
-	/* reopen file in read mode to print file contents*/
-	fp = freopen(abc.txt, "r", fp);
-
 	/*print file contents after appending */
 	printf("\nSuccesfully appended");
 
 	fclose(fp);
 }
-
-
