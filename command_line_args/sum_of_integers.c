@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * main - calculates sum of command line arguments
  * @argc: argument count
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (args > 0)
 	{
-		argc(args)++;
+		args++;
 	}
 	args_sum = strlen(argc);
 
