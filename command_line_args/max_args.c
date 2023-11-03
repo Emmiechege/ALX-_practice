@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 		{
 			max_value = num;
 		}
+		printf("The maximum value is: %d\n", max_value); 
 	}
 	return (0);
 }
