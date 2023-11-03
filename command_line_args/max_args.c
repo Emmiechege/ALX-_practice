@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 /**
  * main - finds the maximum value among a given list of arguments
  * @argc: argument count
@@ -15,13 +16,11 @@ int main(int argc, char *argv[])
 	for (int i = 1; i < argc; i++)
 	{
 	/* the arguments are strings, we convert them to integers*/
-		num = atoi(argv[i]);
+		int num = atoi(argv[i]);
 	/* we parse  for the no with largest value*/
-		num < max_value;
-
-		if(num > max_value)
+		if (num > max_value)
 		{
-		       num = max_value;
+			max_value = num;
 		}
 	}
 	return (0);
