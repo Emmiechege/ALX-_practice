@@ -8,15 +8,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int args_sum;/* a variable to hold the sum of args*/
-	int args; /*the loop counter*/
+	int args_sum = 0;/* a variable to hold the sum of args*/
+	int args = 1; /*the loop counter*/
 
-
-	if (args > 0)
+	/*the nth element in the array should be less than argc*/
+	while (args < argc)
 	{
 		args++;
 	}
-	args_sum = strlen(argc);
+	/* converting the characters to integers*/
+	args_sum = atoi(argv[args]);
 
 	return (0);
 }
