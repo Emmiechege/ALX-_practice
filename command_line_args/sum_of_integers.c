@@ -9,17 +9,15 @@
 int main(int argc, char *argv[])
 {
 	int args_sum = 0;/* a variable to hold the sum of args*/
-	int args = 1; /*the loop counter*/
 
 	/*the nth element in the array should be less than argc*/
-	while (args < argc)
+	for (int args = 1; args < argc; args++)
 	{
 		args_sum += atoi(argv[args]);
-		args++;
 	}
-	/* converting the characters to integers*/ 
+	/* converting the characters to integers*/
 
-	printf("The sum is: %d", args_sum);
+	printf("The sum is: %d\n", args_sum);
 
 	return (0);
 }
