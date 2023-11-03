@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 /**
- * main - calculates sum of command line arguments
+ * main - calculates and prints sum of command line arguments
  * @argc: argument count
  * @argv: argument vector
- * Return - 0
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -14,10 +14,12 @@ int main(int argc, char *argv[])
 	/*the nth element in the array should be less than argc*/
 	while (args < argc)
 	{
+		args_sum += atoi(argv[args]);
 		args++;
 	}
-	/* converting the characters to integers*/
-	args_sum = atoi(argv[args]);
+	/* converting the characters to integers*/ 
+
+	printf("The sum is: %d", args_sum);
 
 	return (0);
 }
