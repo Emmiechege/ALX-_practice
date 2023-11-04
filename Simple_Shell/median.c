@@ -28,5 +28,13 @@ int main(int argc, char *argv[])
 	{
 		numbers[i - 1] = atoi(argv[i]);
 	}
+	/*sort the array in ascending order */
+	qsort(numbers, num_args, sizeof(int), compare);
 
+	/* calculate the median */
+	double median;
+	if (num_args % 2 == 0)
+	{
+	/*if the no of elements is even,median is average of the middle 2 values*/
+		median = (double)(numbers[num_args / 2 - 1] + numbers[num_args / 2]) / 2.0;
 
