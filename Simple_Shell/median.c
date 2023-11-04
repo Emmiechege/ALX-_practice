@@ -7,6 +7,8 @@
  * @argv: argument vector
  * Return: 0
  */
+
+/* function to compare two integers for qsort*/
 int compare(const void *a, const void *b)
 {
 	return (*(int*)a - *(int*)b);
@@ -37,4 +39,15 @@ int main(int argc, char *argv[])
 	{
 	/*if the no of elements is even,median is average of the middle 2 values*/
 		median = (double)(numbers[num_args / 2 - 1] + numbers[num_args / 2]) / 2.0;
+	}
+	else 
+	{
+	/* if the no of elements is odd, the median is the middle value*/
+		median = (double)number[num_args / 2];
+	}
+
+	printf("Median: %2lf\n", median);
+
+	return (0);
+}
 
