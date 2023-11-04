@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
- * main - calculates the median of a list of numbers 
+ * main - calculates the median of a list of numbers
  * passed as command-line arguments
  * @argc: argument count
  * @argv: argument vector
@@ -11,7 +11,7 @@
 /* function to compare two integers for qsort*/
 int compare(const void *a, const void *b)
 {
-	return (*(int*)a - *(int*)b);
+	return (*(int *)a - *(int *)b);
 }
 
 int main(int argc, char *argv[])
@@ -19,9 +19,8 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("Usage: %s <um1> <num2> <num3> ... \n", argv[0]);
-		return 1;
+		return (1);
 	}
-	
 	int num_args = argc - 1;
 	int numbers[num_args];
 
@@ -39,7 +38,9 @@ int main(int argc, char *argv[])
 	{
 	/*if the no of elements is even,median is average of the middle 2 values*/
 		median = (double)(numbers[num_args / 2 - 1] + numbers[num_args / 2]) / 2.0;
+
 	}
+
 	else 
 	{
 	/* if the no of elements is odd, the median is the middle value*/
