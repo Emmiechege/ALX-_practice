@@ -16,3 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error: invalid input,provide two integer values\n");
 		return 1; /*return a non-zero satus code indicating error*/
 	}
+
+	/*calculate sum and product*/
+	int sum = num1 + num2;
+	int product = num1 * num2;
