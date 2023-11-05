@@ -10,3 +10,9 @@ int main(int argc, char *argv[])
 	}
 
 	/* convert the command line arguments to integers */
+	int num1, num2;
+	if (scanf(argv[1], "%d", &num1) != 1 || sscanf(argv[2], "%d", &num2) != 1)
+	{
+		printf("Error: invalid input,provide two integer values\n");
+		return 1; /*return a non-zero satus code indicating error*/
+	}
