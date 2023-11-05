@@ -20,3 +20,10 @@ int main(int argc, char *argv[])
 	/*calculate sum and product*/
 	int sum = num1 + num2;
 	int product = num1 * num2;
+
+	/*print the results */
+	printf("sum: %d\n", sum);
+	printf("Product: %d\n", product);
+
+	return (0);
+}
