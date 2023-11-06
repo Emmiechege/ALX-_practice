@@ -7,7 +7,7 @@
 int main(void)
 {
 	size_t buff_size = 20;
-	char *buff = malloc(sizeof(char) *n);
+	char *buff = malloc(sizeof(char) * buff);
 
 	printf("Enter name: ");
 	getline(&buff, &buff_size, stdin);
@@ -16,5 +16,5 @@ int main(void)
 
 	free(buff);
 
-	return(0);
+	return (0);
 }
