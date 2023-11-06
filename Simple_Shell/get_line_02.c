@@ -7,12 +7,12 @@
 int main(void)
 {
 	size_t buff_size = 20;
-	char *buff = malloc(sizeof(char) * buff);
+	char *buff = malloc(sizeof(char) * buff_size);
 
 	printf("Enter name: ");
 	getline(&buff, &buff_size, stdin);
 
-	printf("The name is:  %sThe size is %lu", buff, buff_size);
+	printf("The name is:  %sThe size is %ld\n", buff, buff_size);
 
 	free(buff);
 
