@@ -12,11 +12,11 @@ int main(void)
 	/*use the array argv[0], to access the filename*/
 	int val = execve(argv[0], argv, NULL);
 
-	if (val == -1)
+	if (val == -1)/*Error handling*/
 	{
 		perror("Error");
 	}
 	printf("Done with execve");
 
-	Return (0);
+	return(0);
 }
