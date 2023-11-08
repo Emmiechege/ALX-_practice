@@ -2,16 +2,16 @@
 #include <string.h>
 /**
  * main - tokenizes a string str
- * return: 0
+ * Return: 0
  */
 int main(void)
 {
-	char *str = "my name is Emmie";
-	char *delim = " ";
+	char str[] = "my name is Emmie"; /*the string to be split*/
+	char *delim = " "; /*the delimiter*/
 	char *token;
 
-	token = strtok(str, delim);
-	printf = ("Token is: %s", token);
+	token = strtok(str, delim); /*calling the strtok function*/
+	printf("%s\n", token);
 
 	return (0);
 }
