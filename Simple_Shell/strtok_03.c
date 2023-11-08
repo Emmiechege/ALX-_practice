@@ -7,14 +7,16 @@
  */
 int main(void)
 {
-	char *src = "coding makes me so happy";
+	char *orig_str = "coding makes me so happy";
 	/*str holds a copy of the string, allocate memory for it*/
-	/*the length of memoty ro be allocate is determined by the length of src*/
-	char *str = malloc(sizeof(char) * strlen(src));
+	/*the size of memory to allocate is determined by the length of orig_str*/
+	/*by allocating a separate block of memory,*/
+	/*we ensure original string is not modified by strtok*/
+	char *str = malloc(sizeof(char) * strlen(orig_str));
 	char *delim = " ";/*the delimiter*/
 	char *token;/*holds the tokens*/
 
-	strcpy(str, src);/*copy contents of src into str*/
+	strcpy(str, orig_str);/*copy contents of orig_str into str*/
 
 	token = strtok(str, delim);
 
@@ -26,4 +28,3 @@ int main(void)
 
 	return (0);
 }
-
