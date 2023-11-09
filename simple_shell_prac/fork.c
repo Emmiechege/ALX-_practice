@@ -6,8 +6,10 @@
  */
 int main(void)
 {
+	/* create a variable that stores the results of the fork system call*/
 	pid_t child_pid;
 
+	/*invoke fork system call*/
 	child_pid = fork();/*child process is created here*/
 
 	if (child_pid == -1) /* meand the system call failed*/
