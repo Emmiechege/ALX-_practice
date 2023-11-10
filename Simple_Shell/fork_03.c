@@ -19,12 +19,12 @@ int main(void)
 	if (child_pid == 0)
 	{
 		sleep(20);
-		printf("I am the child process");
+		printf("I am the child process\n");
 	}
 	else
 	{
 		parent_pid = getpid();
-		printf("I am the parent id");
+		printf("Parent ID is: %s\n", parent_pid);
 	}
 
 	return (0);
