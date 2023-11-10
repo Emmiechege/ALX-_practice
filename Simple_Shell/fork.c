@@ -14,16 +14,15 @@ int main(void)
 	/* check if system call ws succesful*/
 		perror("Error");
 	}
-	
 	child_pid = fork();/*invoke fork to create the child process*/
 
 	if (child_pid > 0)
 	{
 		printf("I am the parent process\n");
 	}
-	else (child == 0)
+	else
 	{
-		printf("i am the child process\n");
+		printf("I am the child process\n");
 	}
 
 	return (0);
