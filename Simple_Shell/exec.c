@@ -10,7 +10,7 @@
 int main(void)
 {
 	/*first arg is file path, last arg is NULL pointer*/
-	char argv[] = {"/bin/ls", "-l", NULL};
+	char *argv[] = {"/bin/ls", "-l", NULL};
 
 	/*variable to hold return value of execve*/
 	/*use array argv[0] to access filename*/
