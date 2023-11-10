@@ -16,10 +16,9 @@ int main(void)
 		perror("Unsuccessful process");
 		return (1);
 	}
-	
 	if (child_pid == 0)
 	{
-		sleep (20);
+		sleep(20);
 		printf("I am the child process");
 	}
 	else
