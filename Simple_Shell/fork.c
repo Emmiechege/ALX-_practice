@@ -19,11 +19,11 @@ int main(void)
 
 	if (child_pid > 0)
 	{
-		printf("I am the parent process");
+		printf("I am the parent process\n");
 	}
 	else (child == 0)
 	{
-		printf("i am the child process");
+		printf("i am the child process\n");
 	}
 
 	return (0);
