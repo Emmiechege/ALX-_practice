@@ -19,7 +19,7 @@ int main(void)
 		/*check if fork system call fails*/
 		if (child_pid == -1)
 		{
-			perror( "Error");
+			perror("Error");
 		}
 		if (Child_pid == 0)
 		{
