@@ -8,20 +8,17 @@ int main(void)
 {
 	pid_t my_pid;
 
-	printf("Before fork was invoked");
+	printf("Before fork was invoked\n");
 
-	my_pid = fork();
+	fork();
 
 	if (my_pid == -1)
 	{
-		perror("Unsuccesful");
+		perror("Unsuccesful\n");
 		return (1);
 	}
 
-	printf("After fork was invoked");
+	printf("After fork was invoked\n");
 
 	return (0);
 }
-
-
-
