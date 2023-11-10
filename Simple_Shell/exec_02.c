@@ -11,7 +11,7 @@ int main(void)
 {
 	pid_t child_pid;
 
-	char *argv = {"/bin/ls", "-l", NULL};
+	char *argv[] = {"/bin/ls", "-l", NULL};
 
 	/*invoke the fork system call to create child process*/
 		child_pid = fork();
@@ -21,7 +21,7 @@ int main(void)
 		{
 			perror("Error");
 		}
-		if (Child_pid == 0)
+		if (child_pid == 0)
 		{
 		/*the child process*/
 		/*variable to hold return value of exec*/
