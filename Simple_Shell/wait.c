@@ -22,13 +22,13 @@ int main(void)
 	if (child_pid == 0)
 	{
 		/*the child process*/
-		printf("I am the child");
+		printf("I am the child\n");
 	}
 	else
 	{
 		/*the parent process*/
 		sleep(20);
-		printf("I am the parent");
+		printf("I am the parent\n");
 	}
 	return (0);
 }
