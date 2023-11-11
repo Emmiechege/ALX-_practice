@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char *argv[] = {"l", "NULL"};
+	char *argv[] = {"/bin/ls", "-l", "a", NULL};
 	pid_t my_pid;
 
 	my_pid = fork();
@@ -30,7 +30,8 @@ int main(void)
 	}
 	else
 	{
-		printf("All commands to this program will run");
+		/*parent process*/
+		printf("All commands to this program will run\n");
 		wait(NULL);
 	}
 	return (0);
