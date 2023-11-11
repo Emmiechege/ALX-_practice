@@ -21,7 +21,7 @@ int main(void)
 	if (my_pid == 0)
 	{
 		/*the child process*/
-		int val = execve(argv[], argv, NULL);
+		int val = execve(argv[0], argv, NULL);
 
 		if (val == -1)
 		{
