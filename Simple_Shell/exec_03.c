@@ -8,7 +8,7 @@
  * it and executes a new process
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	char *argc[] = {"/bin/ls", "-l", NULL};
 	pid_t child_pid;
