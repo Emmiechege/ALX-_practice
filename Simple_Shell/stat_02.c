@@ -26,7 +26,7 @@ int main (int ac, char **v)
 		/*invoke stat function to check if file exists*/
 		if (stat(av[i], &st) == 0)
 		{
-			printf(" FOUND\n");
+			printf(" FOUND\n");/*print if the file is found*/
 		}
 		else
 		{
