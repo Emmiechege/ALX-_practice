@@ -17,12 +17,13 @@ int main (int ac, char **v)
 	if (ac < 2)
 	{
 		printf ("Usage: %s path_to_file ...\n", av[0]);
-		return (1);
+		return (1);/*return error code*/
 	}
-	i = 1;
+	i = 1;/*start with first command line argument*/
 	while (av[i])
 	{
-		printf("%s:", av[i]);
+		printf("%s:", av[i]);/*print current file path*/
+		/*invoke stat function to check if file exists*/
 		if (stat(av[i], &st) == 0)
 		{
 			printf(" FOUND\n");
