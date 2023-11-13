@@ -3,8 +3,11 @@
 #include <sys/types.h>
 #include <sys/stats.h>
 /*
- * main - an example of stat
- * Return : 0
+ * main - demonstrates use of stat function to check existence of files,
+ * specified as commmand line arguments
+ * @ac: argument count
+ * @av: aray of strings representing command line arguments
+ * Return : 0 if succesful, 1 if there is an error
  */
 int main (int ac, char **v)
 {
