@@ -17,6 +17,7 @@ int main(void)
 	else
 	{
 		perror("stat");
+		return (-1);
 	}
 
 	return (0);
