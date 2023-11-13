@@ -8,9 +8,9 @@
 int main(void)
 {
 	const char *file_name;
-	struct stat buff;
+	struct stat *buff;
 
-	if (stat(file_name, &buff) == 0)
+	if (stat(file_name, buff) == 0)
 	{
 		printf("File Size: %lld bytes\n", (long long)buff.st_size);
 	}
