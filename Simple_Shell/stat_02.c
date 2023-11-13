@@ -11,9 +11,9 @@
  */
 int main (int ac, char **v)
 {
-	unsigned int i;
-	struct stat ac;
-
+	unsigned int i;/*loop counter for command line arguments*/
+	struct stat ac;/*struct to hold information about a file*/
+/*confirm if there's atleast one command line arg, program name*/
 	if (ac < 2)
 	{
 		printf ("Usage: %s path_to_file ...\n", av[0]);
