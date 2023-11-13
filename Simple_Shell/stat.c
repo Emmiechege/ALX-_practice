@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	const char *file_name = "myfile.txt";
+	const char *file_name = "median.c";
 	struct stat buff;
 
 	if (stat(file_name, &buff) == 0)
@@ -17,7 +17,6 @@ int main(void)
 	else
 	{
 		perror("stat");
-		return (-1);
 	}
 
 	return (0);
