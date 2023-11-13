@@ -30,7 +30,7 @@ int main (int ac, char **v)
 		}
 		else
 		{
-			printf(" NOT FOUND\n");
+			printf(" NOT FOUND\n");/*print if file isnt found*/
 		}
 		i++;
 	}
