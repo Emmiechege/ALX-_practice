@@ -32,7 +32,7 @@ int main (int ac, char **v)
 		{
 			printf(" NOT FOUND\n");/*print if file isnt found*/
 		}
-		i++;
+		i++;/*move to next command line argument*/
 	}
 	return (0);
 }
