@@ -11,6 +11,7 @@ int main(void)
 /*check if environment variable is set, non_null*/
 	if (env_var != NULL)
 	{
+	/*If set, print the value of the environment variable*/
 		printf("Value of A_VARIABLE: %s\n", env_variable);
 	}
 	else
