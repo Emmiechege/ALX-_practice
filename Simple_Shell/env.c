@@ -7,7 +7,8 @@
 int main(void)
 {
 	char *env_var = getenv("A_VARIABLE");
-	
+
+/*check if environment variable is set, non_null*/
 	if (env_var != NULL)
 	{
 		printf("Value of A_VARIABLE: %s\n", env_variable);
