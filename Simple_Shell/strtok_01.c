@@ -10,7 +10,7 @@ int main(void)
 	char *delim = " "; /*the delimiter*/
 	char *token;
 
-	token = strtok(str, delim); /*calling the strtok function*/
+	token = strtok(str, delim); /*invoking the strtok function*/
 	printf("%s\n", token);
 
 	return (0);
