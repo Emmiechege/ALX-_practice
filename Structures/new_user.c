@@ -25,9 +25,11 @@ struct User *new_user(char *name, char *email, int age)
 	{
 		return (NULL);
 	}
+	/*assigns values to members of the User structure*/
 	user->name = name;
 	user->email = email;
 	user->age = age;
+	/*return ponter to the allocated user structure*/
 	return (user);
 }
 /**
