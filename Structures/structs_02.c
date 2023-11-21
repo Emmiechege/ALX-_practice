@@ -22,14 +22,10 @@ int main(void)
 
 	ptr = &novel;
 
-	novel.title = "The power of confidence";
-	novel.pages = 500;
-	novel.author = "Emmie Chege";
-
 	printf("Enter the Title: ");
 	scanf("%s", ptr->title);
 	printf("Enter the Pages: ");
-	scanf("%d", novel. pages);
+	scanf("%d",& novel. pages);
 	printf("Enter the authors name: ");
 	scanf("%s", ptr->author);
 
