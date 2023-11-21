@@ -38,13 +38,18 @@ struct User *new_user(char *name, char *email, int age)
  */
 int main(void)
 {
+	/*declare a pointer to User structure*/
 	struct User *user;
 
+	/*call new_user function to create a new user*/
 	user = new_user("Foo", "foo@foo.bar", 98);
 	if (user == NULL)
 		return (1);
+	/*print info about user*/
 	printf("User %s created !\n", user->name);
 	printf("His email is: %s\n", user->email);
 	printf("And he is %d years old\n", user->age);
+
+	free(user);/*free allocated memory*/
 	return (0);
 }
