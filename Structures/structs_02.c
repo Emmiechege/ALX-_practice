@@ -27,11 +27,11 @@ int main(void)
 	novel.author = "Emmie Chege";
 
 	printf("Enter the Title: ");
-	scanf("%s", &novel.title);
+	scanf("%s", ptr.title);
 	printf("Enter the Pages: ");
-	scanf("%d", &novel.pages);
+	scanf("%d", ptr.pages);
 	printf("Enter the authors name: ");
-	scanf("%s", &novel.author);
+	scanf("%s", ptr.author);
 
 	printf("The name of the book is: %s\n", novel.title);
 	printf("The number of pages are:  %s\n", novel.pages);
