@@ -22,6 +22,15 @@ int main(void)
 
 	ptr = &novel;
 
+	ptr->title = (char *)malloc(30 * sizeof(char));
+	ptr->author = (char *)malloc(50 * sizeof(char));
+
+	if (ptr->title == NULL || ptr->author == NULL)
+	{
+		fprintf(stderr, "Memory allocation failed");
+		return (1);
+	}
+
 	printf("Enter the Title: ");
 	scanf("%s", ptr->title);
 	printf("Enter the Pages: ");
