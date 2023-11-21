@@ -7,6 +7,7 @@ struct person
 	int age;
 	char school[20]
 };
+#endif
 
 #include <stdio.h>
 /**
