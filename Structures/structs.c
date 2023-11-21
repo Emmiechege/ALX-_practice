@@ -11,6 +11,7 @@ struct person
 };
 #endif
 
+#include <person.h>
 /**
  * main - creates a structure
  * Return: 0
