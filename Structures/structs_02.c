@@ -20,3 +20,16 @@ int main(void)
 	struct book novel;
 	ptr = &title;
 	ptr2 = &author;
+
+	novel.title = "The power of confidence";
+	novel.pages = 500;
+	novel.author = "Emmie Chege";
+
+	printf("Enter the Title: ");
+	scanf("%s", &novel.title);
+	printf("Enter the Pages: ");
+	scanf("%d", &novel.pages);
+	printf("Enter the authors name: ");
+	scanf("%s", &novel.author);
+
+	printf("The name of the book is: ", 
