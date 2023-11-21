@@ -1,15 +1,16 @@
 #ifndef PERSON_H
 #define PERSON_H
+
+#include <stdio.h>
 /*structures are defined in the .h files*/
 struct person
 {
 	char *name;
 	int age;
-	char school[20]
+	char school[20];
 };
 #endif
 
-#include <stdio.h>
 /**
  * main - creates a structure
  * Return: 0
