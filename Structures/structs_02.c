@@ -35,6 +35,7 @@ int main(void)
 		return (1);
 	}
 
+	/*print user input*/
 	printf("Enter the Title: ");
 	scanf("%s", ptr->title);
 	printf("Enter the Pages: ");
@@ -42,10 +43,12 @@ int main(void)
 	printf("Enter the authors name: ");
 	scanf("%s", ptr->author);
 
+	/*print information*/
 	printf("The name of the book is: %s\n", novel.title);
 	printf("The number of pages are:  %d\n", novel.pages);
 	printf("The name of the Author is: %s\n", novel.author);
 
+	/*free allocated memory*/
 	free(ptr->title);
 	free(ptr->author);
 
