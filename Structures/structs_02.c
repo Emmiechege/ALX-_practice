@@ -18,8 +18,9 @@ struct book
 int main(void)
 {
 	struct book novel;
-	ptr = &title;
-	ptr2 = &author;
+	struct book *ptr;
+
+	ptr = &novel;
 
 	novel.title = "The power of confidence";
 	novel.pages = 500;
@@ -32,4 +33,9 @@ int main(void)
 	printf("Enter the authors name: ");
 	scanf("%s", &novel.author);
 
-	printf("The name of the book is: ", 
+	printf("The name of the book is: %s\n", novel.title);
+	printf("The number of pages are:  %s\n", novel.pages);
+	printf("The name of the Author is: %s\n", novel.author);
+
+	return(0);
+}
