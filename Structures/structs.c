@@ -1,14 +1,18 @@
+#ifndef PERSON_H
+#define PERSON_H
+/*structures are defined in the .h files*/
+struct person
+{
+	char *name;
+	int age;
+	char school[20]
+};
+
 #include <stdio.h>
 /**
  * main - creates a structure
  * Return: 0
  */
-struct person
-{
-	char *name;
-	int age;
-	char school[20];
-};
 
 int main(void)
 {
