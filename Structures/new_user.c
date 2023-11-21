@@ -7,28 +7,43 @@ struct User
 	char *email;
 	int age;
 };
+/**
+ * new_user - allocates memory to a structure
+ * @name: struct member
+ * @email: struct member
+ * @age: struct member
+ * Return: user
+ */
 
 struct User *new_user(char *name, char *email, int age)
 {
 	struct User *user;
 
-	user = &new_user;
-
-	user->name = (char *)malloc(sizeof(char));
-	user->email = (char *)malloc(sizeof(char));
-
-	if user->name == NULL || user->email == NULL)
+	user = malloc(sizeof(struct User));
+	if (usr == NULL)
 	{
-		perror("Memory allocation failed");
-		return (1);
+		return (NULL);
 	}
-
-	printf("Enter name: ");
-	scanf("%s\n", user->name);
-	printf("Enter email: ");
-	scanf("%s\n", user->emil);
-	printf("Enter age: ");
-	scanf("%d", new_user.age);
-
+	user->name = name;
+	user->email = email;
+	user->age = age;
 	return (user);
+}	
+	return (user);
+}
+/**
+ * main - prints members of a structure
+ * Return: 0
+ */
+int main(void)
+{
+	struct User *user;
+
+	user = new_user("Foo", "foo@foo.bar", 98);
+	if (user == NULL)
+		return (1);
+	printf("User %s created !\n", user->name);
+	printf("His email is: %s\n", user->email);
+	prntf("And he is %d years old\n", user->age);
+	return (0);
 }
