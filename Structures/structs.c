@@ -7,7 +7,7 @@ struct person
 {
 	char *name;
 	int age;
-	char school[20];
+	char *school;
 };
 #endif
 
@@ -23,5 +23,6 @@ int main(void)
 	person1.name = "Emmie";
 	person1.age = 22;
 	person1.school = "ALX";
-	Return(0);
+
+	return(0);
 }
