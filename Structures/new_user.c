@@ -17,10 +17,11 @@ struct User
 
 struct User *new_user(char *name, char *email, int age)
 {
+	/*Declare a pointer to a User structure*/
 	struct User *user;
-
+	/*Allocate memory for the structure*/
 	user = malloc(sizeof(struct User));
-	if (user == NULL)
+	if (user == NULL)/*check if memory alocation was succesful*/
 	{
 		return (NULL);
 	}
