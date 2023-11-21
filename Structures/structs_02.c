@@ -29,7 +29,7 @@ int main(void)
 	printf("Enter the Title: ");
 	scanf("%s", ptr->title);
 	printf("Enter the Pages: ");
-	scanf("%d", ptr->pages);
+	scanf("%d",novel. pages);
 	printf("Enter the authors name: ");
 	scanf("%s", ptr->author);
 
