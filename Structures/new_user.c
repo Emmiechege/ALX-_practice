@@ -28,8 +28,6 @@ struct User *new_user(char *name, char *email, int age)
 	user->email = email;
 	user->age = age;
 	return (user);
-}	
-	return (user);
 }
 /**
  * main - prints members of a structure
