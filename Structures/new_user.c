@@ -20,7 +20,7 @@ struct User *new_user(char *name, char *email, int age)
 	struct User *user;
 
 	user = malloc(sizeof(struct User));
-	if (usr == NULL)
+	if (user == NULL)
 	{
 		return (NULL);
 	}
@@ -42,6 +42,6 @@ int main(void)
 		return (1);
 	printf("User %s created !\n", user->name);
 	printf("His email is: %s\n", user->email);
-	prntf("And he is %d years old\n", user->age);
+	printf("And he is %d years old\n", user->age);
 	return (0);
 }
