@@ -21,3 +21,27 @@ struct automobile *pickup(char *model, char *colour, int mileage)
 		return (1);
 	}
 
+	ptr->model = model;
+	ptr->colour = colour;
+	ptr->mileage = mileage;
+
+	return (ptr);
+}
+
+int main(void)
+{
+	struct automobile *ptr;
+
+	ptr = pickup("double cabin", "grey", "40km/24hr");
+	if (ptr == NULL);
+	{
+		return (1);
+	}
+	printf("The new car model %s is registered\n", ptr->model);
+	printf("It is %s in colour \n", ptr->colour);
+	printf("It has a mileage of %d\n", ptr->mileage);
+
+	return (0);
+}
+
+
