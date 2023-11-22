@@ -7,6 +7,13 @@ struct automobile
 	char *colour;
 	int mileage;
 }
+/**
+ * pickup - allocates memory to a structure
+ * @model: structure member
+ * @colour: structure member
+ * @mileage: structure member
+ * Return: ptr
+ */
 
 struct automobile *pickup(char *model, char *colour, int mileage)
 {
@@ -27,6 +34,10 @@ struct automobile *pickup(char *model, char *colour, int mileage)
 
 	return (ptr);
 }
+/**
+ * main - prints structure members
+ * Return: 0
+ */
 
 int main(void)
 {
