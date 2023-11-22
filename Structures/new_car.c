@@ -18,9 +18,10 @@ struct automobile
 struct automobile *pickup(char *model, char *colour, int mileage)
 {
 	struct automobile *ptr;
+
 	ptr = &pickup;
 
-	ptr = malloc(sizeof(struct automobile));
+	ptr->pickup = malloc(sizeof(struct automobile));
 
 	if (ptr == NULL)
 	{
@@ -44,7 +45,7 @@ int main(void)
 	struct automobile *ptr;
 
 	ptr = pickup("double cabin", "grey", "40km/24hr");
-	if (ptr == NULL);
+	if (ptr == NULL)
 	{
 		return (1);
 	}
