@@ -21,12 +21,11 @@ struct automobile *pickup(char *model, char *colour, int mileage)
 
 	ptr = &pickup;
 
-	ptr->pickup = malloc(sizeof(struct automobile));
+	ptr = malloc(sizeof(struct automobile));
 
 	if (ptr == NULL)
 	{
 		perror("Memory allocation failed");
-		return (1);
 	}
 
 	ptr->model = model;
@@ -44,7 +43,7 @@ int main(void)
 {
 	struct automobile *ptr;
 
-	ptr = pickup("double cabin", "grey", "40km/24hr");
+	ptr = pickup("double cabin", "grey", "40");
 	if (ptr == NULL)
 	{
 		return (1);
@@ -55,5 +54,3 @@ int main(void)
 
 	return (0);
 }
-
-
