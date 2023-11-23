@@ -19,7 +19,7 @@ struct person
 int main(void)
 {
 	struct person person1;
-
+/*define the structure members*/
 	person1.name = "Emmie";
 	person1.age = 22;
 	person1.school = "ALX";
